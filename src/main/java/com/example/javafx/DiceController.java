@@ -23,8 +23,6 @@ public class DiceController implements Initializable {
     @FXML
     private Label sumLabel;
 
-    private ImageView test;
-
     private Random rand;
     private int rollCount;
     private Timeline rollTimeline;
@@ -42,7 +40,7 @@ public class DiceController implements Initializable {
             diceImages[3] = new Image(getClass().getResourceAsStream("/img/dice/4.png"));
             diceImages[4] = new Image(getClass().getResourceAsStream("/img/dice/5.png"));
             diceImages[5] = new Image(getClass().getResourceAsStream("/img/dice/6.png"));
-        } catch (IllegalArgumentException e) {
+        } catch (Exception e) {
             System.out.println("Error loading image: " + e.getMessage());
         }
         rand = new Random();

@@ -4,22 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8aad8c8-b683-415e-86a0-0cdfb6314e02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Street.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/field/monopoly_field.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="a8aad8c8-b683-415e-86a0-0cdfb6314e02" name="Changes" comment="new Gamefield">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/DiceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/HelloController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafx/dice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/dice.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/img/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/6.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +97,16 @@
       <updated>1674157822212</updated>
       <workItem from="1674157823531" duration="7037000" />
       <workItem from="1674168923455" duration="4230000" />
-      <workItem from="1674300387091" duration="4316000" />
+      <workItem from="1674300387091" duration="4396000" />
     </task>
+    <task id="LOCAL-00001" summary="new Gamefield">
+      <created>1674329848033</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1674329848033</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,5 +125,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new Gamefield" />
+    <option name="LAST_COMMIT_MESSAGE" value="new Gamefield" />
   </component>
 </project>

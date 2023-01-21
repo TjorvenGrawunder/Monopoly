@@ -1,6 +1,6 @@
 package com.example.game;
 
-public class Street {
+public class Field {
     private String name;
     private String color;
     private int count;
@@ -8,7 +8,7 @@ public class Street {
     private double y;
     private int owner;
 
-    public Street(String name, String color, int count, double x, double y){
+    public Field(String name, String color, int count, double x, double y){
         this.name = name;
         this.color = color;
         this.count = count;
