@@ -36,12 +36,12 @@ public class DiceController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         diceImages = new Image[6];
         try {
-            diceImages[0] = new Image(getClass().getResourceAsStream("/img/1.png"));
-            diceImages[1] = new Image(getClass().getResourceAsStream("/img/2.png"));
-            diceImages[2] = new Image(getClass().getResourceAsStream("/img/3.png"));
-            diceImages[3] = new Image(getClass().getResourceAsStream("/img/4.png"));
-            diceImages[4] = new Image(getClass().getResourceAsStream("/img/5.png"));
-            diceImages[5] = new Image(getClass().getResourceAsStream("/img/6.png"));
+            diceImages[0] = new Image(getClass().getResourceAsStream("/img/dice/1.png"));
+            diceImages[1] = new Image(getClass().getResourceAsStream("/img/dice/2.png"));
+            diceImages[2] = new Image(getClass().getResourceAsStream("/img/dice/3.png"));
+            diceImages[3] = new Image(getClass().getResourceAsStream("/img/dice/4.png"));
+            diceImages[4] = new Image(getClass().getResourceAsStream("/img/dice/5.png"));
+            diceImages[5] = new Image(getClass().getResourceAsStream("/img/dice/6.png"));
         } catch (IllegalArgumentException e) {
             System.out.println("Error loading image: " + e.getMessage());
         }
