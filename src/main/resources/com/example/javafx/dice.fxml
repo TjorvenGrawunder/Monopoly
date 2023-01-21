@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.DiceController">
+   <children>
+      <ImageView fx:id="dice2Image" fitHeight="49.0" fitWidth="36.0" layoutX="259.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/1.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="dice1Image" disable="false" fitHeight="86.0" fitWidth="36.0" layoutX="300.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="259.0" layoutY="269.0" mnemonicParsing="false" onAction="#rollDice" text="Roll the Dice" />
+      <Label fx:id="sumLabel" layoutX="297.0" layoutY="192.0" text="0" />
+   </children>
+</AnchorPane>
