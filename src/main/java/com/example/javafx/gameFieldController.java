@@ -15,7 +15,7 @@ import java.net.URL;
 import java.util.Random;
 import java.util.ResourceBundle;
 
-public class DiceController implements Initializable {
+public class gameFieldController implements Initializable {
     @FXML
     private ImageView dice1Image;
     @FXML

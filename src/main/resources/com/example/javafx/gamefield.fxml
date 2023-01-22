@@ -8,7 +8,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="935.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.DiceController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="935.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.gameFieldController">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="2.0" layoutY="843.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="838.0" layoutY="843.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />

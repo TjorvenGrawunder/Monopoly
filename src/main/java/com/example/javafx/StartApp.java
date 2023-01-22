@@ -11,7 +11,7 @@ import java.io.IOException;
 public class StartApp extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("dice.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("startScreen.fxml"));
         Scene scene = new Scene(root);
         stage = new Stage();
         stage.setScene(scene);
