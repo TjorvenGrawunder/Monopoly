@@ -1,8 +1,15 @@
 package com.example.javafx;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class StartScreenController {
     @FXML
@@ -15,13 +22,17 @@ public class StartScreenController {
     TextField playerFourInputField;
     @FXML
     TextField playerFiveInputField;
+    @FXML
+    Button startButton;
 
     String[] playerNames = new String[5];
 
     private int playerCount = 0;
 
-    public void startGame(){
+    public void startGame() throws IOException {
         calcPlayers();
+        Stage stage;
+        Parent root;
         if(playerCount < 2){
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
@@ -29,6 +40,11 @@ public class StartScreenController {
             alert.setContentText("Please enter at least two players!");
             alert.showAndWait();
         }else{
+            stage = (Stage) startButton.getScene().getWindow();
+            root = FXMLLoader.load(getClass().getResource("gamefield.fxml"));
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+            stage.show();
 
         }
     }

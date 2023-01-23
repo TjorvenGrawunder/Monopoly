@@ -5,67 +5,10 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="935.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.gameFieldController">
    <children>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="2.0" layoutY="843.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="838.0" layoutY="843.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />
-      <AnchorPane layoutX="154.0" layoutY="843.0" visible="false">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="532.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5b3a29" height="152.0" layoutX="608.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5b3a29" height="152.0" layoutX="456.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="380.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89cff0" height="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89cff0" height="152.0" layoutX="76.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#89cff0" height="152.0" layoutX="228.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="304.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-         </children>
-      </AnchorPane>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="1.0" layoutY="7.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="837.0" layoutY="7.0" smooth="false" stroke="BLACK" strokeType="INSIDE" visible="false" width="152.0" />
-      <AnchorPane layoutX="-265.0" layoutY="425.0" rotate="90.0" visible="false">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="532.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0084" height="152.0" layoutX="608.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0084" height="152.0" layoutX="456.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0084" height="152.0" layoutX="380.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8800" height="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8800" height="152.0" layoutX="76.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff8800" height="152.0" layoutX="228.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="304.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="153.0" layoutY="7.0" visible="false">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="532.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="152.0" layoutX="608.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="152.0" layoutX="456.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="152.0" layoutX="380.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="76.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="152.0" layoutX="228.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="304.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="152.0" layoutX="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-         </children>
-      </AnchorPane>
-      <AnchorPane layoutX="571.0" layoutY="425.0" rotate="90.0" visible="false">
-         <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="532.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="152.0" layoutX="608.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="152.0" layoutX="456.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="380.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="152.0" layoutX="76.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREEN" height="152.0" layoutX="228.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="304.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#acf6c8" height="152.0" layoutX="152.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="76.0" />
-         </children>
-      </AnchorPane>
       <ImageView fitHeight="935.0" fitWidth="935.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/field/monopoly_field.png" />
@@ -86,5 +29,30 @@
          </image>
       </ImageView>
       <Button layoutX="357.0" layoutY="719.0" mnemonicParsing="false" onAction="#rollDice" text="Roll the Dice" />
+      <ImageView fx:id="playerOneImage" fitHeight="40.0" fitWidth="44.0" layoutX="600.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/player/batman.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerThreeImage" fitHeight="40.0" fitWidth="44.0" layoutX="694.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/player/captain_america.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerFourImage" fitHeight="40.0" fitWidth="44.0" layoutX="580.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/player/mario.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerTwoImage" fitHeight="40.0" fitWidth="44.0" layoutX="634.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/player/spongebob.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="playerFiveImage" fitHeight="40.0" fitWidth="44.0" layoutX="662.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/player/velma.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

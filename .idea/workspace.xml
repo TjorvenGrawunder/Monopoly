@@ -5,14 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8aad8c8-b683-415e-86a0-0cdfb6314e02" name="Changes" comment="renamed Street to Field">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartScreenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/startScreen.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/game/GameManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/player/batman.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/player/captain_america.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/player/mario.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/player/spongebob.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/player/velma.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/DiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/gameFieldController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafx/dice.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/gamefield.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/game/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Field.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/StartScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/gameFieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/gameFieldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafx/gamefield.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/gamefield.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafx/startScreen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/startScreen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/dice/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/img/dice/6.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +53,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_directory_selection": "E:/JavaFX/src/main/java/com/example/javafx",
-    "last_opened_file_path": "E:/JavaFX/src/main/java/com/example/javafx"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_directory_selection&quot;: &quot;E:/JavaFX/src/main/java/com/example/javafx&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/JavaFX/src/main/java/com/example/javafx&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\JavaFX\src\main\java\com\example\javafx" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tjorv\IdeaProjects\Monopoly\src\main\resources\img\player" />
+      <recent name="C:\Users\Tjorv\IdeaProjects\Monopoly\src\main\resources\img\dice" />
       <recent name="E:\JavaFX\src\main\resources\img\dice" />
       <recent name="E:\JavaFX\src\main\resources\img" />
       <recent name="E:\JavaFX\src\main\resources\images\dice" />
@@ -65,7 +79,7 @@
   <component name="RunManager">
     <configuration name="StartApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.javafx.StartApp" />
-      <module name="Monopoly" />
+      <module name="JavaFX" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.javafx.*" />
@@ -95,6 +109,10 @@
       <workItem from="1674300387091" duration="4531000" />
       <workItem from="1674330104232" duration="248000" />
       <workItem from="1674403040546" duration="3286000" />
+      <workItem from="1674414455031" duration="51000" />
+      <workItem from="1674458001086" duration="304000" />
+      <workItem from="1674461779637" duration="8497000" />
+      <workItem from="1674471881813" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="new Gamefield">
       <created>1674329848033</created>
