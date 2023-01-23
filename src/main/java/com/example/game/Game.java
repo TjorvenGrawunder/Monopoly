@@ -1,11 +1,12 @@
 package com.example.game;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Game {
     private static Game instance;
     private Field[] gameField = new Field[40];
-    ArrayList<Player> players = new ArrayList<Player>();
+    List<Player> players = new ArrayList<>();
 
     public void init(String[] playerNames){
         for(int i = 0; i < playerNames.length; i++){
@@ -59,14 +60,14 @@ public class Game {
         gameField[39] = new Field("Schlossalle",13,400,0,0);
     }
 
-    public static Game getGameInstance(){
+    public static synchronized Game getGameInstance(){
         if(instance == null){
             instance = new Game();
         }
         return instance;
     }
 
-    public ArrayList<Player> getPlayers(){
+    public List<Player> getPlayers(){
         return this.players;
     }
 }

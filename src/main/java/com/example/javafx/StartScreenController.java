@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class StartScreenController {
     @FXML
@@ -41,7 +42,7 @@ public class StartScreenController {
             alert.showAndWait();
         }else{
             stage = (Stage) startButton.getScene().getWindow();
-            root = FXMLLoader.load(getClass().getResource("gamefield.fxml"));
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("gamefield.fxml")));
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
