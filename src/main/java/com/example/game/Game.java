@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
-    private static Game instance;
     private Field[] gameField = new Field[40];
     List<Player> players = new ArrayList<>();
 
-    public void init(String[] playerNames){
+    public Game(String[] playerNames){
         for(int i = 0; i < playerNames.length; i++){
             if(playerNames[i] != null){
                 players.add(new Player(i+1,playerNames[i]));
@@ -60,12 +59,7 @@ public class Game {
         gameField[39] = new Field("Schlossalle",13,400,0,0);
     }
 
-    public static synchronized Game getGameInstance(){
-        if(instance == null){
-            instance = new Game();
-        }
-        return instance;
-    }
+
 
     public List<Player> getPlayers(){
         return this.players;

@@ -32,8 +32,7 @@ public class StartScreenController {
 
     String[] playerNames = new String[5];
     List<Player> players = new ArrayList<>();
-    Game gameInstance = Game.getGameInstance();
-    GamefieldController fieldControllerInstance = GamefieldController.getFieldControllerInstance();
+    Game game;
 
     private int playerCount = 0;
 
@@ -49,14 +48,18 @@ public class StartScreenController {
             alert.showAndWait();
         }else{
             stage = (Stage) startButton.getScene().getWindow();
-            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("gamefield.fxml")));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("gamefield.fxml"));
+            root = loader.load();
+            GamefieldController gamefieldController = loader.getController();
+            game = new Game(playerNames);
+            gamefieldController.setGame(game);
+            gamefieldController.init();
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
         }
-        gameInstance.init(playerNames);
-        players = gameInstance.getPlayers();
-        fieldControllerInstance.setPlayers(players);
+
+        //fieldControllerInstance.setPlayers(players);
     }
 
     private void calcPlayers(){

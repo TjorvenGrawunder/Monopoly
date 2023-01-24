@@ -1,5 +1,6 @@
 package com.example.javafx;
 
+import com.example.game.Game;
 import com.example.game.Player;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -13,7 +14,7 @@ import javafx.util.Duration;
 import java.net.URL;
 import java.util.*;
 
-public class GamefieldController implements Initializable {
+public class GamefieldController {
     @FXML
     private ImageView dice1Image;
     @FXML
@@ -37,7 +38,7 @@ public class GamefieldController implements Initializable {
     private int dice1Value;
     private int dice2Value;
     private Image[] diceImages;
-    private static GamefieldController instance;
+    private Game game;
 
     public List<Player> getPlayers() {
         return players;
@@ -49,9 +50,9 @@ public class GamefieldController implements Initializable {
 
     private List<Player> players = new ArrayList<>();
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    public void init() {
         diceImages = new Image[6];
+        players = game.getPlayers();
         genPlayerImg();
         try {
             diceImages[0] = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/dice/1.png")));
@@ -93,18 +94,11 @@ public class GamefieldController implements Initializable {
         rollTimeline.playFromStart();
     }
 
-    public static synchronized GamefieldController getFieldControllerInstance(){
-        if(instance == null){
-            instance = new GamefieldController();
-        }
-        return instance;
-    }
 
     public void genPlayerImg(){
         if(players.size() >= 2){
             playerOneImage.setImage(new Image(players.get(0).getImage()));
             playerTwoImage.setImage(new Image(players.get(1).getImage()));
-            System.out.println("Test");
         }
         if(players.size() >= 3){
             playerThreeImage.setImage(new Image(players.get(2).getImage()));
@@ -115,6 +109,14 @@ public class GamefieldController implements Initializable {
         if(players.size() == 5){
             playerFiveImage.setImage(new Image(players.get(4).getImage()));
         }
+    }
+
+    public Game getGame() {
+        return game;
+    }
+
+    public void setGame(Game game) {
+        this.game = game;
     }
 }
 
