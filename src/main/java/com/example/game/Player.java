@@ -9,6 +9,15 @@ public class Player {
     String name;
     int budget;
     Field[] fields = new Field[40];
+
+    public InputStream getImage() {
+        return image;
+    }
+
+    public void setImage(InputStream image) {
+        this.image = image;
+    }
+
     InputStream image;
 
     public Player(int id, String name){

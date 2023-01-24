@@ -1,5 +1,7 @@
 package com.example.javafx;
 
+import com.example.game.Game;
+import com.example.game.Player;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -10,6 +12,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class StartScreenController {
@@ -27,6 +31,9 @@ public class StartScreenController {
     Button startButton;
 
     String[] playerNames = new String[5];
+    List<Player> players = new ArrayList<>();
+    Game gameInstance = Game.getGameInstance();
+    GamefieldController fieldControllerInstance = GamefieldController.getFieldControllerInstance();
 
     private int playerCount = 0;
 
@@ -46,8 +53,10 @@ public class StartScreenController {
             Scene scene = new Scene(root);
             stage.setScene(scene);
             stage.show();
-
         }
+        gameInstance.init(playerNames);
+        players = gameInstance.getPlayers();
+        fieldControllerInstance.setPlayers(players);
     }
 
     private void calcPlayers(){

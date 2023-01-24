@@ -7,52 +7,32 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="935.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.gameFieldController">
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.GamefieldController">
    <children>
-      <ImageView fitHeight="935.0" fitWidth="935.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="750.0" fitWidth="750.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/field/monopoly_field.png" />
          </image>
       </ImageView>
-      <Label fx:id="sumLabel" layoutX="526.0" layoutY="538.0" prefHeight="120.0" prefWidth="108.0" text="0">
+      <Label fx:id="sumLabel" layoutX="384.0" layoutY="423.0" prefHeight="120.0" prefWidth="108.0" text="0">
          <font>
             <Font size="82.0" />
          </font></Label>
-      <ImageView fx:id="dice1Image" disable="false" fitHeight="76.0" fitWidth="76.0" layoutX="153.0" layoutY="696.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice1Image" disable="false" fitHeight="76.0" fitWidth="76.0" layoutX="114.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/dice/1.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="dice2Image" fitHeight="76.0" fitWidth="76.0" layoutX="229.0" layoutY="696.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="dice2Image" fitHeight="76.0" fitWidth="76.0" layoutX="190.0" layoutY="556.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../img/dice/1.png" />
          </image>
       </ImageView>
-      <Button layoutX="357.0" layoutY="719.0" mnemonicParsing="false" onAction="#rollDice" text="Roll the Dice" />
-      <ImageView fx:id="playerOneImage" fitHeight="40.0" fitWidth="44.0" layoutX="600.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/player/batman.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="playerThreeImage" fitHeight="40.0" fitWidth="44.0" layoutX="694.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/player/captain_america.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="playerFourImage" fitHeight="40.0" fitWidth="44.0" layoutX="580.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/player/mario.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="playerTwoImage" fitHeight="40.0" fitWidth="44.0" layoutX="634.0" layoutY="498.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/player/spongebob.png" />
-         </image>
-      </ImageView>
-      <ImageView fx:id="playerFiveImage" fitHeight="40.0" fitWidth="44.0" layoutX="662.0" layoutY="448.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../img/player/velma.png" />
-         </image>
-      </ImageView>
+      <Button layoutX="334.0" layoutY="582.0" mnemonicParsing="false" onAction="#rollDice" text="Roll the Dice" />
+      <ImageView fx:id="playerOneImage" fitHeight="40.0" fitWidth="44.0" layoutX="502.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerThreeImage" fitHeight="40.0" fitWidth="44.0" layoutX="596.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerFourImage" fitHeight="40.0" fitWidth="44.0" layoutX="482.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerTwoImage" fitHeight="40.0" fitWidth="44.0" layoutX="536.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="playerFiveImage" fitHeight="40.0" fitWidth="44.0" layoutX="564.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>

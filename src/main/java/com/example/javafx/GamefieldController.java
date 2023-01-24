@@ -1,5 +1,6 @@
 package com.example.javafx;
 
+import com.example.game.Player;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.fxml.FXML;
@@ -10,11 +11,9 @@ import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 
 import java.net.URL;
-import java.util.Objects;
-import java.util.Random;
-import java.util.ResourceBundle;
+import java.util.*;
 
-public class gameFieldController implements Initializable {
+public class GamefieldController implements Initializable {
     @FXML
     private ImageView dice1Image;
     @FXML
@@ -38,10 +37,22 @@ public class gameFieldController implements Initializable {
     private int dice1Value;
     private int dice2Value;
     private Image[] diceImages;
+    private static GamefieldController instance;
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    private List<Player> players = new ArrayList<>();
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         diceImages = new Image[6];
+        genPlayerImg();
         try {
             diceImages[0] = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/dice/1.png")));
             diceImages[1] = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/dice/2.png")));
@@ -82,8 +93,28 @@ public class gameFieldController implements Initializable {
         rollTimeline.playFromStart();
     }
 
-    public static void setPlayers(){
+    public static synchronized GamefieldController getFieldControllerInstance(){
+        if(instance == null){
+            instance = new GamefieldController();
+        }
+        return instance;
+    }
 
+    public void genPlayerImg(){
+        if(players.size() >= 2){
+            playerOneImage.setImage(new Image(players.get(0).getImage()));
+            playerTwoImage.setImage(new Image(players.get(1).getImage()));
+            System.out.println("Test");
+        }
+        if(players.size() >= 3){
+            playerThreeImage.setImage(new Image(players.get(2).getImage()));
+        }
+        if(players.size() >= 4){
+            playerFourImage.setImage(new Image(players.get(3).getImage()));
+        }
+        if(players.size() == 5){
+            playerFiveImage.setImage(new Image(players.get(4).getImage()));
+        }
     }
 }
 
