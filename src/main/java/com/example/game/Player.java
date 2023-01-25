@@ -8,15 +8,9 @@ public class Player {
     int id;
     String name;
     int budget;
-    Field[] fields = new Field[40];
+    Field field;
 
-    public InputStream getImage() {
-        return image;
-    }
 
-    public void setImage(InputStream image) {
-        this.image = image;
-    }
 
     InputStream image;
 
@@ -54,5 +48,20 @@ public class Player {
     public int remMoney(int amount){
         this.budget -= amount;
         return this.budget;
+    }
+    public InputStream getImage() {
+        return image;
+    }
+
+    public void setImage(InputStream image) {
+        this.image = image;
+    }
+
+    public Field getField() {
+        return field;
+    }
+
+    public void setField(Field field) {
+        this.field = field;
     }
 }

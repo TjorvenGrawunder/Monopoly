@@ -4,8 +4,8 @@ public class Field {
     private String name;
     private int groupID;
     private int price;
-    private double x;
-    private double y;
+    private int x;
+    private int y;
     private int owner;
 
     /**
@@ -33,7 +33,7 @@ public class Field {
      * @param x
      * @param y
      */
-    public Field(String name, int groupID, int price, double x, double y){
+    public Field(String name, int groupID, int price, int x, int y){
         this.name = name;
         this.groupID = groupID;
         this.price = price;
