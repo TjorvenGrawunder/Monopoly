@@ -31,6 +31,8 @@ public class GamefieldController {
     private ImageView playerFourImage;
     @FXML
     private ImageView playerFiveImage;
+    @FXML
+    private Label playerLabel;
 
     private Random rand;
     private int rollCount;
@@ -39,6 +41,7 @@ public class GamefieldController {
     private int dice2Value;
     private Image[] diceImages;
     private Game game;
+    private List<Player> players = new ArrayList<>();
 
     public List<Player> getPlayers() {
         return players;
@@ -48,12 +51,14 @@ public class GamefieldController {
         this.players = players;
     }
 
-    private List<Player> players = new ArrayList<>();
+
 
     public void init() {
         diceImages = new Image[6];
         players = game.getPlayers();
         genPlayerImg();
+        playerLabel.setText("Player: " + game.getCurrentPlayer().getName());
+        game.getCurrentPlayer().setField(game.getGameField()[0]);
         try {
             diceImages[0] = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/dice/1.png")));
             diceImages[1] = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/img/dice/2.png")));
@@ -77,6 +82,7 @@ public class GamefieldController {
                 dice1Image.setImage(diceImages[dice1Value - 1]);
                 dice2Image.setImage(diceImages[dice2Value - 1]);
                 sumLabel.setText(Integer.toString(dice1Value + dice2Value));
+                playerLabel.setText("Player: " + game.nextPlayer());
             } else {
                 int dice1 = rand.nextInt(6) + 1;
                 int dice2 = rand.nextInt(6) + 1;
@@ -92,6 +98,7 @@ public class GamefieldController {
     public void rollDice() {
         rollCount = 0;
         rollTimeline.playFromStart();
+
     }
 
 
@@ -111,12 +118,34 @@ public class GamefieldController {
         }
     }
 
+
+
     public Game getGame() {
         return game;
     }
 
     public void setGame(Game game) {
         this.game = game;
+    }
+
+    public ImageView getPlayerOneImage() {
+        return playerOneImage;
+    }
+
+    public ImageView getPlayerTwoImage() {
+        return playerTwoImage;
+    }
+
+    public ImageView getPlayerThreeImage() {
+        return playerThreeImage;
+    }
+
+    public ImageView getPlayerFourImage() {
+        return playerFourImage;
+    }
+
+    public ImageView getPlayerFiveImage() {
+        return playerFiveImage;
     }
 }
 

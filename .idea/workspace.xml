@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8aad8c8-b683-415e-86a0-0cdfb6314e02" name="Changes" comment="renamed Street to Field">
+    <list default="true" id="a8aad8c8-b683-415e-86a0-0cdfb6314e02" name="Changes" comment="added Field Coordinates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/game/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Field.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/game/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/javafx/GamefieldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/javafx/GamefieldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/javafx/gamefield.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/javafx/gamefield.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674329966083</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added Field Coordinates">
+      <created>1674642777292</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674642777292</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,14 +141,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="new Gamefield" />
     <MESSAGE value="renamed Street to Field" />
-    <option name="LAST_COMMIT_MESSAGE" value="renamed Street to Field" />
+    <MESSAGE value="added Field Coordinates" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Field Coordinates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/example/javafx/GamefieldController.java</url>
-          <line>53</line>
+          <line>56</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

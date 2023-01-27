@@ -34,5 +34,6 @@
       <ImageView fx:id="playerFourImage" fitHeight="40.0" fitWidth="44.0" layoutX="482.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="playerTwoImage" fitHeight="40.0" fitWidth="44.0" layoutX="536.0" layoutY="403.0" pickOnBounds="true" preserveRatio="true" />
       <ImageView fx:id="playerFiveImage" fitHeight="40.0" fitWidth="44.0" layoutX="564.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="playerLabel" layoutX="522.0" layoutY="109.0" text="Player:" />
    </children>
 </AnchorPane>

@@ -1,18 +1,23 @@
 package com.example.game;
 
+import javafx.scene.image.ImageView;
+
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Objects;
 
 public class Player {
-    int id;
-    String name;
-    int budget;
-    Field field;
+    private int id;
+    private String name;
+    private int budget;
 
+    private Field field;
 
+    private Player next;
 
-    InputStream image;
+    private ImageView playerView;
+
+    private InputStream image;
 
     public Player(int id, String name){
         this.id = id;
@@ -64,4 +69,25 @@ public class Player {
     public void setField(Field field) {
         this.field = field;
     }
+
+    public Player getNext() {
+        return next;
+    }
+
+    public void setNext(Player next) {
+        this.next = next;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public ImageView getPlayerView() {
+        return playerView;
+    }
+
+    public void setPlayerView(ImageView playerView) {
+        this.playerView = playerView;
+    }
+
 }

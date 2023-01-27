@@ -1,19 +1,30 @@
 package com.example.game;
 
+import com.example.javafx.GamefieldController;
+import javafx.fxml.FXMLLoader;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
     private Field[] gameField = new Field[40];
+    private Player currentPlayer;
     List<Player> players = new ArrayList<>();
 
     public Game(String[] playerNames){
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("gamefield.fxml"));
+        GamefieldController gamefieldController = loader.getController();
         for(int i = 0; i < playerNames.length; i++){
             if(playerNames[i] != null){
                 players.add(new Player(i+1,playerNames[i]));
             }
         }
+        for(int i = 0; i < players.size()-1; i++){
+            players.get(i).setNext(players.get(i+1));
+        }
+        players.get(players.size()-1).setNext(players.get(0));
         createGameField();
+        currentPlayer = players.get(0);
     }
 
     public void createGameField(){
@@ -59,9 +70,23 @@ public class Game {
         gameField[39] = new Field("Schlossalle",13,400,680,600);
     }
 
+    public String nextPlayer(){
+        currentPlayer = currentPlayer.getNext();
+        return currentPlayer.getName();
+    }
+
+    public Player getCurrentPlayer(){
+        return this.currentPlayer;
+    }
+
 
 
     public List<Player> getPlayers(){
         return this.players;
     }
+
+    public Field[] getGameField() {
+        return gameField;
+    }
+
 }
